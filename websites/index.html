@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoAI - 下一代分布式AI架构</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 3rem;
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #667eea;
+        }
+        
+        .feature-description {
+            color: #666;
+        }
+        
+        .code-preview {
+            background: #1a1a2e;
+            color: #eee;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            overflow-x: auto;
+        }
+        
+        .code-preview pre {
+            margin: 0;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .cta-section {
+            text-align: center;
+            background: white;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+        
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .metric-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .metric-label {
+            color: #666;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 NeoAI</h1>
+            <p>下一代分布式AI架构 | 超越边界的计算引擎</p>
+        </div>
+        
+        <div class="metrics">
+            <div class="metric-card">
+                <div class="metric-value">100K+</div>
+                <div class="metric-label">上下文长度</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">50ms</div>
+                <div class="metric-label">推理延迟</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">P2P</div>
+                <div class="metric-label">分布式网络</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">99.9%</div>
+                <div class="metric-label">可用性</div>
+            </div>
+        </div>
+        
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🧠</div>
+                <div class="feature-title">记忆压缩系统</div>
+                <div class="feature-description">
+                    基于层次化压缩的无限上下文记忆系统，支持高效检索和语义理解。
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🔥</div>
+                <div class="feature-title">极速解码引擎</div>
+                <div class="feature-description">
+                    优化的推理引擎，支持多精度量化和流式输出，延迟趋近于零。
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
+                <div class="feature-title">安全推理专家</div>
+                <div class="feature-description">
+                    内置逆向工程和安全分析模块，提供专业级的安全评估能力。
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🌐</div>
+                <div class="feature-title">分布式算力</div>
+                <div class="feature-description">
+                    P2P网络聚合全球闲置算力，让普通设备也能运行超级计算。
+                </div>
+            </div>
+        </div>
+        
+        <div class="code-preview">
+            <pre>
+# NeoAI 核心使用示例
+
+from core.engine import NeoAIEngine
+from core.security.reverse_engineer import SecurityExpert
+
+# 创建引擎实例
+engine = NeoAIEngine()
+
+# 启动引擎
+await engine.start()
+
+# 处理请求
+result = await engine.process_request({
+    "type": "memory_compress",
+    "text": "NeoAI 是未来 AI 的架构"
+})
+
+# 安全分析
+expert = SecurityExpert()
+report = await expert.analyze(binary_data)
+
+print(f"压缩比: {result['compression_ratio']}x")
+            </pre>
+        </div>
+        
+        <div class="cta-section">
+            <h2>准备好开始了吗？</h2>
+            <p>加入 NeoAI 的开源社区，一起构建超越边界的AI架构</p>
+            <a href="https://github.com/neoi/neoi" class="cta-button" target="_blank">
+                🚀 查看GitHub仓库
+            </a>
+        </div>
+    </div>
+</body>
+</html>
