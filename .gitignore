@@ -35,3 +35,18 @@ Thumbs.db
 # Environment
 .env
 .env.local
+desktop.ini
+*.tmp
+*.bak
+*.exe
+.env.*
+!.env.example
+*.iml
+*.py[cod]
+.eggs/
+.mypy_cache/
+.ruff_cache/
+coverage.xml
+.tox/
+.ipynb_checkpoints/
+*.so

@@ -12,7 +12,7 @@ from distributed.compute_cluster import ComputeCluster, TaskPriority
 async def test_cluster_creation():
     """测试集群初始化"""
     cluster = ComputeCluster()
-    
+
     print(f"✅ 计算集群创建完成")
 
 
@@ -20,16 +20,14 @@ async def test_cluster_creation():
 async def test_task_submission():
     """测试任务提交"""
     cluster = ComputeCluster()
-    
+
     task_id = await cluster.submit_task(
-        "test_task",
-        {"test_data": "sample"},
-        TaskPriority.NORMAL
+        "test_task", {"test_data": "sample"}, TaskPriority.NORMAL
     )
-    
+
     assert task_id is not None
     assert len(task_id) == 16
-    
+
     print(f"✅ 任务提交完成: {task_id}")
 
 
